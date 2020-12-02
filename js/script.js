@@ -38,30 +38,30 @@ printMessage('Twój ruch to: ' + playerMove);
 if(computerMove == 'kamień' && playerMove == 'papier'){
   printMessage('Ty wygrywasz!');
 }
-else(computerMove == 'kamień' && playerMove == 'nozyce'){
+else if(computerMove == 'kamień' && playerMove == 'nozyce'){
   printMessage('Ty wygrywasz!');
 }
-else(computerMove == 'kamień' && playerMove == 'kamień'){
+else if(computerMove == 'kamień' && playerMove == 'kamień'){
   printMessage('Mamy remis!');
 }
-else(computerMove == 'papier' && playerMove == 'papier'){
+else if(computerMove == 'papier' && playerMove == 'papier'){
   printMessage('Mamy remis!');
 }
-else(computerMove == 'papier' && playerMove == 'nozyce'){
+else if(computerMove == 'papier' && playerMove == 'nozyce'){
   printMessage('Ja wygrywam!');
 }
-else(computerMove == 'papier' && playerMove == 'kamien'){
+else if(computerMove == 'papier' && playerMove == 'kamien'){
   printMessage('Ja wygrywam!');
 }
-else(computerMove == 'nozyce' && playerMove == 'nozyce'){
+else if(computerMove == 'nozyce' && playerMove == 'nozyce'){
   printMessage('Mamy remis!');
 }
-else(computerMove == 'nozyce' && playerMove == 'papier'){
+else if(computerMove == 'nozyce' && playerMove == 'papier'){
   printMessage('Ty wygrywasz!');
 }
-else(computerMove == 'nozyce' && playerMove == 'kamień'){
+else if(computerMove == 'nozyce' && playerMove == 'kamień'){
   printMessage('Ja wygrywam!');
 }
-else(playerInput > '3'){
+else if(playerInput > '3'){
   printMessage('nieznany ruch');
 }
