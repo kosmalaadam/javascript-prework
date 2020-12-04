@@ -62,6 +62,6 @@ else if(computerMove == 'nozyce' && playerMove == 'papier'){
 else if(computerMove == 'nozyce' && playerMove == 'kamień'){
   printMessage('Ja wygrywam!');
 }
-else if(playerInput > '3'){
+else {
   printMessage('nieznany ruch');
 }
