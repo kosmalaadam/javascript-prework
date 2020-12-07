@@ -97,6 +97,7 @@ function displayResult(argComputerMove, argPlayerMove){
   }
 }
 console.log('moves:', argComputerMove, argPlayerMove);
+<<<<<<< HEAD
 
 document.getElementById('play-rock').addEventListener('click', function(){
   playGame(1);
@@ -109,3 +110,5 @@ document.getElementById('play-scissors').addEventListener('click', function(){
 });
 
 }
+=======
+>>>>>>> 91acb118c62c1fe1d01d2c067a5c2cdc6c7d24c1
