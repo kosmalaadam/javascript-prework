@@ -39,7 +39,7 @@ function getMoveName(playerInput){
    }else if(playerInput == 3){
     return 'nozyce';
   } else(playerInput == 1)
-    return 'kamien'
+    return 'kamień'
   }
 
 console.log(getMoveName);
