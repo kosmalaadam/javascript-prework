@@ -1,12 +1,17 @@
-function playGame(playerInput) {
+{function playGame(playerInput) {
+
   clearMessages();
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
-  let argComputerMove = getMoveName(randomNumber);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
+
+  const argComputerMove = getMoveName(randomNumber);
   printMessage('Mój ruch to: ' + argComputerMove);
-  let argPlayerMove = getMoveName(playerInput);
+
+  const argPlayerMove = getMoveName(playerInput);
   printMessage('Twój ruch to: ' + argPlayerMove);
   console.log('moves:', argComputerMove, argPlayerMove);
+
   displayResult(argComputerMove, argPlayerMove);
+
 }
 
 function displayResult(argComputerMove, argPlayerMove) {
@@ -65,3 +70,4 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame(3);
 });
+}
