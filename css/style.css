@@ -1,0 +1,94 @@
+html {
+    background-color: #8001DB;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#buttons {
+    font-size: 110px;
+    text-align: center;
+    margin: 20px;
+
+
+}
+
+#play-rock {
+    padding: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #078F40;
+    color: white;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+
+#play-paper {
+    padding: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #078F40;
+    color: white;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+
+#play-scissors {
+    padding: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #078F40;
+    color: white;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+
+div #messages {
+    display: flex;
+    flex-direction: column;
+    margin-top: 500px;
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+#messages div {
+    margin-top: 20px;
+    color: #DB9216;
+
+}
+
+#play-paper:hover {
+    color: #078F40;
+    background-color: white;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+
+#play-rock:hover {
+    color: #078F40;
+    background-color: white;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+
+#play-scissors:hover {
+    color: #078F40;
+    background-color: white;
+    border-radius: 10%;
+    border: 1px solid transparent;
+}
+
+
+header h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #DB9216;
+    text-transform: uppercase;
+}

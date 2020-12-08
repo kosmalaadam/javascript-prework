@@ -1,70 +1,15 @@
-function playGame(playerInput){
-
-  function clearMessages(){
-   document.getElementById('messages').innerHTML = '';}
-  
-
-let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-console.log('Wylosowana liczba to: ' + randomNumber);
-
-let argComputerMove = getMoveName(randomNumber);
-
-function getMoveName(randomNumber){
-  if(randomNumber == 2){
-    return 'papier';
-  } else if(randomNumber == 3){
-    return 'nozyce';
-  } else(randomNumber == 1)
-    return 'kamien'
-  }
-
-console.log(getMoveName);
-/*if(randomNumber == 1){
-  computerMove = 'kamień';
+function playGame(playerInput) {
+  clearMessages();
+  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  let argComputerMove = getMoveName(randomNumber);
+  printMessage('Mój ruch to: ' + argComputerMove);
+  let argPlayerMove = getMoveName(playerInput);
+  printMessage('Twój ruch to: ' + argPlayerMove);
+  console.log('moves:', argComputerMove, argPlayerMove);
+  displayResult(argComputerMove, argPlayerMove);
 }
-else if(randomNumber == 2){
-    computerMove = 'papier';
-}
-else if(randomNumber == 3){
-    computerMove = 'nozyce';
-}*/
 
-printMessage('Mój ruch to: ' + argComputerMove);
-
-
-/*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
-
-console.log('Gracz wpisał: ' + playerInput);
-
-let argPlayerMove = getMoveName(playerInput);
-
-function getMoveName(playerInput){
-  if(playerInput == 2){
-    return 'papier';
-   }else if(playerInput == 3){
-    return 'nozyce';
-  } else(playerInput == 1)
-    return 'kamień'
-  }
-
-console.log(getMoveName);
-/*if(playerInput == '1'){
-  playerMove = 'kamień';
-}
-else if(playerInput == '2'){
-  playerMove = 'papier';
-}
-else if(playerInput == '3'){
-  playerMove = 'nozyce';
-}*/
-
-printMessage('Twój ruch to: ' + argPlayerMove);
-
-
-
-function displayResult(argComputerMove, argPlayerMove){
-
+function displayResult(argComputerMove, argPlayerMove) {
   if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
     printMessage('Ja wygrywam!');
   }
@@ -80,7 +25,7 @@ function displayResult(argComputerMove, argPlayerMove){
   else if(argComputerMove == 'papier' && argPlayerMove == 'nozyce'){
     printMessage('Ja wygrywam!');
   }
-  else if(argComputerMove == 'papier' && argPlayerMove == 'kamien'){
+  else if(argComputerMove == 'papier' && argPlayerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
   }
   else if(argComputerMove == 'nozyce' && argPlayerMove == 'nozyce'){
@@ -96,8 +41,20 @@ function displayResult(argComputerMove, argPlayerMove){
     printMessage('nieznany ruch');
   }
 }
-console.log('moves:', argComputerMove, argPlayerMove);
-<<<<<<< HEAD
+
+function getMoveName(playerInput) {
+  if (playerInput == 2) {
+    return 'papier';
+  } else if(playerInput == 3) {
+    return 'nozyce';
+  } else if (playerInput == 1) {
+    return 'kamień';
+  }
+}
+
+function clearMessages() {
+  document.getElementById('messages').innerHTML = '';
+}
 
 document.getElementById('play-rock').addEventListener('click', function(){
   playGame(1);
@@ -108,7 +65,3 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame(3);
 });
-
-}
-=======
->>>>>>> 91acb118c62c1fe1d01d2c067a5c2cdc6c7d24c1
