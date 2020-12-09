@@ -47,7 +47,7 @@ function displayResult(argComputerMove, argPlayerMove) {
   }
 }
 
-function getMoveName(playerInput) {
+const getMoveName = function(playerInput){
   if (playerInput == 2) {
     return 'papier';
   } else if(playerInput == 3) {
